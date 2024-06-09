@@ -3,14 +3,15 @@ import '../styles/Hero.css';
 
 const Hero = () => {
   return (
-    <section id="hero" className="hero">
-      <div className="hero-content">
-        <h1>John Doe</h1>
-        <h2>Software Engineer</h2>
-        <p>Building innovative solutions one line of code at a time.</p>
-        <a href="#projects" className="cta">View My Work</a>
-      </div>
-    </section>
+    <main className="main">
+      <section className="intro">
+        <h1>Hi, my name is <span className="name">Robb</span>.</h1>
+        <p>I'm an <span className="highlight">independent creative developer</span> from Abergavenny, South Wales.</p>
+        <div className="avatar">
+          <img src="avatar.png" alt="Avatar" />
+        </div>
+      </section>
+    </main>
   );
 };
 

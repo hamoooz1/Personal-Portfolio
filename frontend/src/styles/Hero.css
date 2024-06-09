@@ -1,0 +1,32 @@
+.main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro .name {
+  color: #007bff;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.intro .highlight {
+  font-weight: bold;
+}
+
+.avatar {
+  margin-top: 30px;
+}
+
+.avatar img {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}

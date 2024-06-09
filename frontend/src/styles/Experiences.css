@@ -1,0 +1,81 @@
+.experiences {
+  padding: 40px 20px;
+  max-width: 60vw;
+  margin: 0 auto;
+  color: rgb(15, 27, 97);
+}
+
+.experiences h3 {
+  color: rgb(15, 27, 97);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.experiences h5 {
+  color: rgb(15, 27, 97);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.job-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 4em;
+  padding-bottom: 3em;
+  border-bottom: .5px solid rgb(15, 27, 97);
+}
+
+.job-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.job-description {
+  flex: 1;
+}
+
+.job-description h4 {
+  color: rgb(15, 27, 97);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.job-description h5 {
+  color: #718096;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.job-description p {
+  color: #4a5568;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #6b46c1;
+  color: #fff;
+  border: 2px solid #6b46c1;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #6b46c1;
+}

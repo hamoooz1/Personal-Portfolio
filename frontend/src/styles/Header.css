@@ -1,0 +1,31 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%; /* Add this line to make the navbar full width */
+  z-index: 999; /* Add this line to ensure the navbar is on top of other elements */
+  margin-top: 3em; 
+}
+
+.navBar-items {
+  display: flex;
+  align-items: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-icon,
+.message-icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0 10px;
+}
