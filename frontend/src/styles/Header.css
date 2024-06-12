@@ -52,7 +52,7 @@ h2:hover {
   border-radius: 50%;
 }
 
-img:hover {
+.logoBird:hover {
   transform: scale(1.2);
   transition: transform 0.4s ease;
   cursor: pointer;

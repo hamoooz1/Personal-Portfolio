@@ -42,13 +42,13 @@ function App() {
         <>
           <Header />
           <Hero />
-          <Skills />
           <Experiences />
-          <About />
           <Projects />
           <Resume />
           <Blog />
           <Contact />
+          <About />
+          <Skills />
           <Footer />
         </>
       )}
