@@ -30,6 +30,8 @@
 }
 
 .aboutMe-not-visible {
+  font-size: 1.2em;
+  color: rgb(50, 63, 139);
   opacity: 0;
 }
 
