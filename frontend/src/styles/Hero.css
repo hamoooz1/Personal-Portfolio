@@ -1,6 +1,16 @@
 .main {
   text-align: center;
+  display: flex;
   padding: 50px 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 4em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .intro h1 {
@@ -9,12 +19,18 @@
 }
 
 .intro .name {
-  color: #007bff;
+  color: rgb(50, 63, 139);
+  font-weight: 700;
 }
 
-.intro p {
+.aboutMe {
   font-size: 1.2em;
-  color: #666;
+  color: rgb(50, 63, 139);
+  transition: opacity 1s ease-in-out;
+}
+
+.aboutMe-not-visible {
+  opacity: 0;
 }
 
 .intro .highlight {
@@ -29,4 +45,8 @@
   height: 200px;
   width: auto;
   border-radius: 50%;
+}
+
+.profile-pic {
+  height: 300px;
 }

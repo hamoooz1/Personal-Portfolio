@@ -13,6 +13,7 @@ import Experiences from './components/Experiences';
 
 function App() {
   return (
+  <div className="background-container">
     <div className="App">
       <Header />
       <Hero />
@@ -25,6 +26,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+  </div>
   );
 }
 

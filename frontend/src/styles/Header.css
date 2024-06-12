@@ -2,30 +2,135 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
   position: fixed;
-  width: 100%; /* Add this line to make the navbar full width */
-  z-index: 999; /* Add this line to ensure the navbar is on top of other elements */
-  margin-top: 3em; 
+  width: 100%;
+  z-index: 999;
+  margin-top: 3em;
 }
 
 .navBar-items {
   display: flex;
   align-items: center;
   margin-left: 3em;
-  margin-right: 3em;
+  margin-right: 4em;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 
 .logo-icon,
 .message-icon {
-  font-size: 24px;
-  color: #007bff;
+  font-size: 2.5em;
 }
 
 h1,
 h2 {
   margin: 0;
   padding: 0 10px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h2:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navBar-separator {
+  font-size: 1.8em;
+  font-weight: 20;
+}
+
+.navBar-separator:hover {
+  cursor: pointer;
+}
+
+.logoBird {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .navBar-items {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 5px;
+  }
+
+  .logo-icon,
+  .message-icon {
+    font-size: 2em;
+  }
+
+  h1,
+  h2 {
+    font-size: 0.9em;
+  }
+
+  .logoBird {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar-items {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 5px;
+  }
+
+  .logo-icon,
+  .message-icon {
+    font-size: 1.8em;
+  }
+
+  h1,
+  h2 {
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+
+  .logoBird {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    margin-top: 1em;
+    padding: 0.5em;
+  }
+
+  .navBar-items {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 5px;
+  }
+
+  .logo-icon,
+  .message-icon {
+    font-size: 1.5em;
+  }
+
+  h1,
+  h2 {
+    font-size: 0.7em;
+    padding: 0 5px;
+  }
+
+  .logoBird {
+    width: 40px;
+    height: 40px;
+  }
 }
