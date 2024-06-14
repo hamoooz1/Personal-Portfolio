@@ -11,14 +11,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experiences from './components/Experiences';
 import Loading from './components/Loading';
+import Menu from './components/Menu';
 import { useState, useEffect } from 'react';
 
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [page, setPage] = useState('Loading');
   const [isExiting, setIsExiting] = useState(false);
   const [showCheckmark, setShowCheckmark] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     // Simulate loading time
@@ -27,20 +29,23 @@ function App() {
       setTimeout(() => {
         setIsExiting(true);
         setTimeout(() => {
-          setIsLoading(false);
+          setPage('Home');
         }, 1000); // Duration of the exit transition
       }, 1000); // Time to show the checkmark before exiting
     }, 3000); // Change the timeout to match your actual loading time
   }, []);
 
+  const changePage = (newPage) => {
+    setPage(newPage);
+  };
+
   return (
   <div className="background-container">
        <div className="App">
-      {isLoading ? (
-        <Loading isExiting={isExiting} showCheckmark={showCheckmark} />
-      ) : (
+      {page == 'Loading' && <Loading isExiting={isExiting} showCheckmark={showCheckmark} />}
+      {page == 'Home' &&
         <>
-          <Header />
+          <Header changePage={changePage}/>
           <Hero />
           <Experiences />
           <Projects />
@@ -51,7 +56,8 @@ function App() {
           <Skills />
           <Footer />
         </>
-      )}
+    }
+    {page == 'Menu' && <Menu/>}
     </div>
   </div>
   );

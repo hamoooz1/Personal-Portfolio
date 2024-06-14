@@ -4,7 +4,7 @@ import { faHouse, faComment} from '@fortawesome/free-solid-svg-icons';
 import '../styles/Header.css';
 import origami from '.././assets/origami.png';
 
-const Header = () => {
+const Header = ({changePage}) => {
   return (
     <header>
       <nav className='navBar'>
@@ -13,7 +13,9 @@ const Header = () => {
           <h1 className='navBar-seperator'>
             |
           </h1>
-          <h2>
+          <h2 onClick={() => {
+            changePage('Menu');
+          }}>
             MENU
           </h2>
         </div>
