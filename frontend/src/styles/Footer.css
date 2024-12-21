@@ -1,0 +1,35 @@
+.footer-container {
+  background-color: rgb(15, 27, 97);
+}
+
+.corp-tag {
+  color: white;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links li a {
+  color: #333;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Unified hover effect for all icons and logos */
+.social-links li a:hover {
+  color: #0077b5; /* Example hover color */
+  transform: scale(1.2);
+}
+
+.proonsite-logo {
+  width: 50px;
+  height: auto;
+}

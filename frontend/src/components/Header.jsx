@@ -22,7 +22,9 @@ const Header = ({changePage}) => {
         <div className='navBar-items'>
         <FontAwesomeIcon icon={faComment} style={{ transform: 'scaleX(-1)'}} className='logo-icon'/>
          <h2>
-           HIRE ME
+         <a href="https://proonsite.ca/" target="_blank" rel="noopener noreferrer">
+              HIRE ME
+            </a>
          </h2>
         </div>
       </nav>

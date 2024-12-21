@@ -48,11 +48,6 @@ function App() {
           <Header changePage={changePage}/>
           <Hero />
           <Experiences />
-          <Projects />
-          <Resume />
-          <Blog />
-          <Contact />
-          <About />
           <Skills />
           <Footer />
         </>
