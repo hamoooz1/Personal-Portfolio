@@ -30,15 +30,29 @@ const Skills = () => {
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet and smaller
+        settings: {
+          slidesToShow: 4, // Show 4 skills at a time
+        },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: {
+          slidesToShow: 3, // Show 3 skills at a time
+        },
+      },
+    ],
   };
 
   return (
     <div className="skills-container">
       <div className='intro-skills-container'>
-      <h3 className="skills-title">My Technical Skills</h3>
-      <p className="skills-subtitle">
-        A collection of tools, frameworks, and technologies I've mastered over the years.
-      </p>
+        <h3 className="skills-title">My Technical Skills</h3>
+        <p className="skills-subtitle">
+          A collection of tools, frameworks, and technologies I've mastered over the years.
+        </p>
       </div>
       <Slider {...settings}>
         {skills.map((skill, index) => (

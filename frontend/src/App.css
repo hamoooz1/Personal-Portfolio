@@ -88,3 +88,11 @@ footer .social-links li a {
   color: #fff;
   text-decoration: none;
 }
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+img, button, a {
+  cursor: pointer;
+}

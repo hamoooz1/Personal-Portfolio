@@ -44,3 +44,14 @@
   justify-content: center;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 10px;
+  }
+
+  .skill-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
