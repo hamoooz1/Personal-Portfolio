@@ -1,10 +1,10 @@
 .main {
   text-align: center;
   display: flex;
-  padding: 50px 20px;
+  padding: 50px, 20px,0px,2px;
   justify-content: center;
   align-items: center;
-  margin: 4em;
+  margin: 5em;
 }
 
 .intro {

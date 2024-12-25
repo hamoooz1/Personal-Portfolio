@@ -40,21 +40,30 @@ function App() {
   };
 
   return (
-  <div className="background-container">
-       <div className="App">
-      {page == 'Loading' && <Loading isExiting={isExiting} showCheckmark={showCheckmark} />}
-      {page == 'Home' &&
-        <>
-          <Header changePage={changePage}/>
-          <Hero />
-          <Experiences />
-          <Skills />
-          <Footer />
-        </>
-    }
-    {page == 'Menu' && <Menu/>}
+    <div className="background-container">
+      <div className="App">
+        {page == 'Loading' && <Loading isExiting={isExiting} showCheckmark={showCheckmark} />}
+        {page == 'Home' &&
+          <>
+            <Header changePage={changePage} />
+            <Hero />
+            <div id="experiences-section">
+              <Experiences />
+            </div>
+            <div id="skills-section">
+              <Skills />
+            </div>
+            <div id="about-section">
+              <About />
+            </div>
+            <div id="contact-section">
+              <Footer />
+            </div>
+          </>
+        }
+        {page == 'Menu' && <Menu changePage={changePage} />}
+      </div>
     </div>
-  </div>
   );
 }
 
