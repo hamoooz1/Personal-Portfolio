@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Experiences.css';
-
+import Amerilot from '../assets/Amerilot.png'
 const Experiences = () => {
 
   let jobs = [
@@ -13,7 +13,7 @@ const Experiences = () => {
     },
     {
       title: 'Software Engineer',
-      image: 'https://img1.wsimg.com/isteam/ip/5c91d6ad-b651-47c2-a35b-0cecb7fbd78a/Amerliorat%20Tech%20logo%20with%20text.png/:/rs=w:430,h:51,cg:true,m/cr=w:430,h:51/qt=q:95',
+      image: Amerilot,
       company: 'Ameliorat Tech Inc',
       date: 'Jun 2024 - Sept 2024',
       description: 'Worked on a team to develop an app to add to the Square marketplace. Created and maintained backend systems and APIs.'
