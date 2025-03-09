@@ -31,7 +31,7 @@ const About = () => {
           <div key={index} className="gallery-item">
             <img src={item.image} alt={item.alt} className="gallery-image" />
             <div className="overlay">
-              <i className="icon fas fa-eye"></i> {/* Replace with your desired icon */}
+              <i className="icon fas fa-eye"></i>
             </div>
           </div>
         ))}

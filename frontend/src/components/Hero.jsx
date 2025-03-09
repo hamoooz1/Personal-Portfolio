@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Hero.css';
-import profilePic from '.././assets/profile-pic.png';
+import profilePic from '../assets/profile-pic.png';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,14 +8,14 @@ const Hero = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
-    }, 1000)
+    }, 1000);
   }, []);
 
   return (
     <main className="main">
       <section className="intro">
         <h1>Hi, my <br />name is <span className="name">Hamza</span>.</h1>
-        <p className={`${isVisible ? 'aboutMe' : 'aboutMe-not-visible'}`}>
+        <p className={isVisible ? 'aboutMe' : 'aboutMe-not-visible'}>
           I'm an <span className="highlight">independent creative developer</span> from <br />Vancouver, Canada
         </p>
       </section>
